@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+
+
+    <style> body {
+        margin: 0%;
+         font-family: "Bebas Neue", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+        
+
+
+
+
+    }
+        
+
+
+
+         .container{
+
+            position: absolute;
+            right: 32px;
+            left: 32px;
+            top: 16px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+
+          }
+
+    .menu-link {
+        color:white;
+        text-decoration: none; 
+        margin-left: 16px; 
+
+
+
+
+
+    }
+
+    .menu-link :hover {
+        text-decoration:underline;
+
+
+
+    }
+
+
+
+
+    .header-image{
+        height: 100vh;
+        width: 100%;
+        object-fit: cover; 
+        filter:brightness(o,5)
+    }
+
+
+
+    .logo {
+        position: absolute;
+        left: 32px;
+        top: 16px;
+        font-size: 10px;
+   
+
+
+
+
+
+    }
+    
+
+
+    .headline {
+        position: absolute;
+        left: 1000px;
+        top: 150px;
+        color: black;
+        font-size: 70px;
+        text-shadow: 5px  5px  5px rgba(0, 0, 0, 0.5);
+
+
+
+
+
+    }
+
+    .Auswahl {
+        position: absolute;
+        left: 730px;
+        top: 600px;
+        color: black;
+        font-size: 70px;
+        text-shadow: 5px  5px  5px rgba(0, 0, 0, 0.5);
+
+
+
+    }
+   
+
+
+    .gelb {
+        color: yellow;
+
+
+    }
+
+
+
+    .beschreibung {
+        height: 300px;
+        padding: 30px 100px;
+        display: flex;
+        gap: 50px;
+
+
+
+    
+    }
+
+    .button{
+        background-color: rgb(102, 102, 0);
+        padding: 8px  20px;
+        border-radius: 8px;
+
+    }
+
+    .botton2 {
+        background-color: rgb(177, 177, 40);
+        padding: 8px  20px;
+        border-radius: 8px;
+
+
+    }
+
+
+    .maps {
+        width: 50%;
+        font-size: 25px;
+    }
+
+    .Produkt {
+        height: 2000px;
+        padding: 30px 100px;
+        display: flex;
+        gap: 100px;
+        width: 50%;
+        font-size: 25px;
+
+
+
+
+    }
+
+
+
+
+    h2 {
+        text-align: center;
+        font-size: 50px;
+
+
+    }
+
+
+
+
+    .kleinvideo{
+        width: 25%;
+
+
+
+    }
+
+
+    .video-container {
+        max-width: 45%;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+
+    }
+
+
+
+    .youtube {
+        width: 560px;
+        height: 315px;
+
+
+
+    }
+
+
+
+    @media (max-width: 1300px) {
+
+        .youtube {
+        width: calc(100vw * 0.4); 
+        height: calc(56.25vw * 0.4);
+
+
+
+    }
+
+       .maps {
+        width: unset;
+       }
+     
+
+
+       .video-container {
+        width: unset;
+        display: flex;
+        justify-content: center;
+
+
+       }
+
+    }
+
+
+
+
+
+
+
+
+    @media (max-width: 700px) {
+        .beschreibung {
+            flex-direction: column;
+            align-items: center;
+            height: unset;
+
+
+
+        }
+
+
+
+      
+
+
+    }
+
+
+    @media (max-width:556px) {
+
+        .navigation {
+            display: none;
+
+
+        }
+
+
+
+
+
+    }
+    @media (max-width:1275px) {
+
+        .headline {
+        position: absolute;
+        left: 100px;
+        top: 150px;
+        color: black;
+        font-size: 70px;
+        text-shadow: 5px  5px  5px rgba(0, 0, 0, 0.5);
+        width: 400px;
+
+
+
+
+    }
+
+    @media (max-width:1160px){
+
+        .Auswahl {
+        position: absolute;
+        left: 120px;
+        top: 600px;
+        color: black;
+        font-size: 70px;
+        text-shadow: 5px  5px  5px rgba(0, 0, 0, 0.5);
+
+
+
+    }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+     </style>
+</head>
+<body>
+ 
+
+ <img class="header-image" src="/img/mountain-biking-95032_1280.jpg">
+
+
+   <div  class="container">
+    <img src="/img/logo2.png">
+    <div class="navigation">
+
+
+
+
+    <a class="menu-link" href="" >Impressum </a>
+    <a class="menu-link  button" href="Kontakt.html" >Kontakt</a>
+    <a class="menu-link" href="" >Home</a>
+    </div>
+ </div>
+
+  <a class="Auswahl botton2" href="Gekauft.html"> Jetzt kaufen</a>
+
+
+
+<h1 class="headline"> Der Fahrad Shop des <span class="gelb"> Vertrauens</span> </h1>
+
+
+<h2> Anfahrt </h2>
+<div class="beschreibung">
+    <div class="maps">
+        Willkommen bei unserem Fahrradladen, Ihrem Ziel für alles rund um das Thema Fahrradfahren! Unser Geschäft ist mehr als nur ein Ort, an dem Fahrräder verkauft werden - es ist ein Treffpunkt für Fahrradbegeisterte und Abenteurer jeden Alters.
+        Gelegen in einerfahrradfreundlichen Nachbarschaft, sind wir stolz darauf, eine breite Palette von Fahrrädern für jeden Bedarf anzubieten.Unser Team von Fachleuten steht Ihnen mit Fachwissen und Begeisterung zur Seite, um sicherzustellen, dass Sie das ideale Fahrrad finden, das Ihren Bedürfnissen und Ihrem Budget entspricht. Wir beraten Sie gerne zu den neuesten Modellen, Zubehör und Ausrüstung, damit Sie das Beste aus Ihrem Fahrerlebnis herausholen können.
+    </div>
+             <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.796725737577!2d6.498113514928462!3d50.57114352824952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf753f9b30f87d%3A0xa969f59f28fc1b0e!2sDer%20Radsportmeister!5e0!3m2!1sde!2sde!4v1713098134558!5m2!1sde!2sde"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+
+
+<h2> Unser Produkt</h2>
+
+<div class="beschreibung">
+    <div class="video-container">
+
+        <video controls autoplay muted>
+            <source class="youtube" src="/img/207800_small.mp4" type="video/mp4">
+            
+            
+            
+            
+            
+            </video>
+
+
+    </div>
+
+
+   
+
+
+
+    <div class="maps">
+        Das Fahrrad bietet eine herausragende Qualität und Langlebigkeit. Mit einem leichten Aluminiumrahmen für optimale Wendigkeit und Stabilität, einem vollgefederten System für eine geschmeidige Fahrt auf jedem Terrain, hochleistungsfähigen Bremsen für maximale Sicherheit und Kontrolle, sowie einer präzisen Schaltung mit 6 Gängen, ist dieses Fahrrad bereit für jedes Gelände.
+        Es wurde stets liebevoll gepflegt und regelmäßig gewartet, befindet sich in ausgezeichnetem Zustand und wartet darauf, neue Abenteuer zu erleben. Jetzt nur zu einem Preis von 750$
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>
